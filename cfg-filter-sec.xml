@@ -1,0 +1,226 @@
+  <filter>
+    <rule uuid="8489702c-ff70-4475-8253-9bb9f5517da3">
+      <type>pass</type>
+      <interface>wan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+        <not>1</not>
+      </source>
+      <destination>
+        <any>1</any>
+        <not>1</not>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1673064394.4341</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1673064394.4341</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="698cb0dc-b6e6-46af-b27c-23f77afe24ac">
+      <type>pass</type>
+      <interface>wan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>out</direction>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+        <not>1</not>
+      </source>
+      <destination>
+        <any>1</any>
+        <not>1</not>
+      </destination>
+      <updated>
+        <username>root@192.168.1.58</username>
+        <time>1674579493.1563</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@192.168.1.58</username>
+        <time>1674579493.1563</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="b508728f-dc18-4dae-82c8-7dba42243eef">
+      <type>block</type>
+      <interface>lan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <descr>test-icmp-permit</descr>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>icmp</protocol>
+      <source>
+        <network>lan</network>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1683862647.2875</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+    </rule>
+    <rule uuid="5101fa62-1a66-4013-b3c6-393aac69e0b1">
+      <type>block</type>
+      <interface>lan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <descr>test-icmp-block</descr>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>icmp</protocol>
+      <source>
+        <network>opt2</network>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1683859606.5958</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1683859606.5958</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="">
+      <type>block</type>
+      <interface>lan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <descr>test-tcp-block</descr>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <network>opt2</network>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+    </rule>
+    <rule uuid="597fa97d-5c52-4432-8e33-bcf7b7935f0b">
+      <type>pass</type>
+      <interface>lan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <descr>rule-template</descr>
+      <direction>in</direction>
+      <category>rule-template</category>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <network>lanip</network>
+        <port>53</port>
+      </source>
+      <destination>
+        <network>opt1ip</network>
+        <port>21</port>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1683931885.1478</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1683931885.1478</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="2ca750dc-e2e1-4d7f-a500-55ef5d146971">
+      <type>pass</type>
+      <interface>opt1</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1672884439.9154</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1672884439.9154</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="fc15e494-cd41-434f-809b-931989c91a7a">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>in</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.1.58</username>
+        <time>1674582418.3359</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1674582223.347</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <rule uuid="63d6e870-053d-40d3-99e7-d3208cc7299e">
+      <type>pass</type>
+      <interface>opt2</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <direction>out</direction>
+      <log>1</log>
+      <quick>1</quick>
+      <source>
+        <any>1</any>
+      </source>
+      <destination>
+        <any>1</any>
+      </destination>
+      <updated>
+        <username>root@192.168.1.58</username>
+        <time>1674582426.9732</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1674582230.2342</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
+    <bypassstaticroutes>yes</bypassstaticroutes>
+  </filter>

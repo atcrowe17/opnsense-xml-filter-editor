@@ -1,0 +1,30 @@
+    <rule uuid="597fa97d-5c52-4432-8e33-bcf7b7935f0b">
+      <type>pass</type>
+      <interface>lan</interface>
+      <ipprotocol>inet</ipprotocol>
+      <statetype>keep state</statetype>
+      <descr>rule-template</descr>
+      <direction>in</direction>
+      <category>rule-template</category>
+      <log>1</log>
+      <quick>1</quick>
+      <protocol>tcp</protocol>
+      <source>
+        <network>lanip</network>
+        <port>53</port>
+      </source>
+      <destination>
+        <network>opt1ip</network>
+        <port>21</port>
+      </destination>
+      <updated>
+        <username>root@172.16.166.2</username>
+        <time>1683931885.1478</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </updated>
+      <created>
+        <username>root@172.16.166.2</username>
+        <time>1683931885.1478</time>
+        <description>/firewall_rules_edit.php made changes</description>
+      </created>
+    </rule>
