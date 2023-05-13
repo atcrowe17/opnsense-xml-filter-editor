@@ -1,0 +1,3 @@
+type,ipprotocol,statetype,description,category,log,quick,protocol,source-ips,source-port,destination-ips,destination-port
+pass,inet,keep state,Python-rule-01,Python-rules,1,1,tcp,1.1.1.1,any,2.2.2.2,22
+drop,inet,keep state,Python-rule-02,Python-rules,1,1,udp,3.3.3.3,any,4.4.4.4,123
